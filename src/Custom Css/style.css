@@ -1,0 +1,23 @@
+/* Rotates the arrow 30 degrees and moves it forward on hover */
+.rotate-arrow {
+  
+  transition: transform 0.3s ease-in-out; 
+}
+
+.project-arrow {
+  transition: transform 0.3s ease-in-out; /* individual arrow animation */
+}
+
+/* On hover, rotate and move each arrow */
+.project-box .hover\:border-orange-500:hover .project-arrow {
+  transform: translateX(5px) translateY(-5px);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.herosec{
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/192/742/small/grunge-dots-and-points-texture-background-abstract-grainy-overlay-graphic-illustration-with-transparent-background-png.png);
+}
