@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function About() {
-  const x=10
+  const x = 10
   return (
     <section className="mx-auto max-w-screen-xl">
       <div className="grid grid-cols-5 gap-4">
@@ -15,13 +15,9 @@ export default function About() {
             <h5 className="font-normal text-sm">Frontend - developer</h5>
           </div>
           <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
-            A dedicated frontend developer with 2 years of hands-on experience
-            in HTML, CSS, JavaScript, React.js, and React Native. Skilled in
-            UI/UX design, enabling the creation of intuitive and visually
-            appealing interfaces. Proficient in WordPress development,
-            successfully completing multiple live projects focused on
-            functionality and user experience.
+            A dedicated frontend developer with 2 years of hands-on experience in HTML, CSS, JavaScript, React.js, and React Native. Skilled in UI/UX design, enabling the creation of intuitive and visually appealing interfaces. Proficient in WordPress development, successfully completing multiple live projects focused on functionality and user experience. Also has basic knowledge of Java, with an interest in further developing backend skills.
           </p>
+
         </div>
 
         {/* Skills Section */}
@@ -34,7 +30,7 @@ export default function About() {
             <h5 className="font-normal text-sm">Till now</h5>
           </div>
           <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
-            HTML, CSS, JavaScript, React.js, React Native, UI/UX Design, WordPress Development, Git and Version Control, RESTful APIs, Zustand, Context API, SEO Optimization.
+            HTML, CSS, JavaScript, React.js, React Native, UI/UX Design, WordPress Development, JAVA, Git and Version Control, RESTful APIs, Zustand, Context API, SEO Optimization.
           </p>
         </div>
 
@@ -48,10 +44,10 @@ export default function About() {
             <h5 className="font-normal text-sm">2021 - 2024</h5>
           </div>
           <p className="text-lg font-normal text-gray-500 dark:text-gray-400">
-          Makhanlal Chaturvedi National University.
+            Makhanlal Chaturvedi National University.
           </p>
         </div>
-        
+
 
         {/* WordPress Developer Section */}
         <div className="col-span-2 row-span-4  py-10 sticky top-24 bg-white z-10">
@@ -59,7 +55,7 @@ export default function About() {
         </div>
 
         <div className="col-span-3 border-b-2 row-span-3  p-10 sticky top-24 z-20 bg-white">
-        <div className="flex justify-between mb-5">
+          <div className="flex justify-between mb-5">
             <h5 className="font-semibold text-2xl text-orange-500">WordPress Developer</h5>
             <h5 className="font-normal text-sm">2022-2023</h5>
           </div>
@@ -69,7 +65,7 @@ export default function About() {
         </div>
 
         <div className="col-span-3 row-span-3 border-b-2 col-start-3 row-start-4  p-10 z-10 sticky top-24 bg-white">
-          
+
           <div className="flex justify-between mb-5">
             <h5 className="font-semibold text-2xl text-orange-500">Internship</h5>
             <h5 className="font-normal text-sm">2024 - Current</h5>
@@ -80,8 +76,8 @@ export default function About() {
         </div>
 
         {/* Education Section */}
-        
-        
+
+
       </div>
     </section>
   );
