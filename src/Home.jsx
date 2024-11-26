@@ -15,7 +15,7 @@ export default function Home() {
   const [currentProjectImage, setCurrentProjectImage] = useState(projectImg1);
 
   const handleHover = (project) => {
-    if (project === 'Modest Hisab Store') {
+    if (project === 'Modest Hijab Store') {
       setCurrentProjectImage(projectImg2);
     } else if (project === 'Ecommerce') {
       setCurrentProjectImage(projectImg1);
@@ -106,7 +106,7 @@ export default function Home() {
           {/* Projects Section */}
           <div className="project-box col-span-4 p-5 gap-5 flex flex-col row-span-7 col-start-9 row-start-1 bg-black text-orange-500 rounded-lg overflow-hidden">
             <div className="flex justify-between">
-              <h5 className="text-lg sm:text-xl font-thin">Projects</h5>
+              <h5 className="text-lg sm:text-xl font-semibold">Projects</h5>
               <svg
                 viewBox="0 0 24 24"
                 width={35}
@@ -130,11 +130,11 @@ export default function Home() {
             />
             <div className="overflow-y-auto max-h-96 scrollbar-hide rounded-lg">
               {[
-                { title: "Ecommerce", subtitle: "MOBILE APP" },
-                { title: "Modest Hisab Store", subtitle: "MOBILE APP" },
-                { title: "Zonestra", subtitle: "WEBSITE" },
-                { title: "KBS Worlds", subtitle: "WEBSITE" },
-                { title: "Sira Consulting", subtitle: "WEBSITE" },
+                { title: "Ecommerce", subtitle: "MOBILE APP", link: "#" },
+                { title: "Modest Hijab Store", subtitle: "MOBILE APP", link: "#" },
+                { title: "Zonestra", subtitle: "WEBSITE", link: "https://zonestra.com/" },
+                { title: "KBS Worlds", subtitle: "WEBSITE", link: "https://kbsworld.co.in/" },
+                { title: "Sira Consulting", subtitle: "WEBSITE", link: "https://siraconsultinginc.com/" },
               ].map((project, index) => (
                 <div
                   key={index}
@@ -148,28 +148,31 @@ export default function Home() {
                       {project.subtitle}
                     </span>
                   </h6>
-                  <svg
-                    className="rotate-arrow project-arrow"
-                    viewBox="0 0 24 24"
-                    width={25}
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 18L18 6M18 6H9M18 6V15"
-                      stroke="orange"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
+                  <a href={project.link} target="_blank">
+                    <svg
+                      className="rotate-arrow project-arrow"
+                      viewBox="0 0 24 24"
+                      width={25}
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+
+                    >
+                      <path
+                        d="M6 18L18 6M18 6H9M18 6V15"
+                        stroke="orange"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>
+                    </svg>
+                  </a>
                 </div>
               ))}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section >
 
   );
 }
