@@ -10,6 +10,7 @@ import WordRotate from "@/components/ui/word-rotate";
 import DotPattern from './components/ui/dot-pattern';
 import { cn } from './lib/utils';
 import bgImg from '../src/assets/tweet.png'
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   const [currentProjectImage, setCurrentProjectImage] = useState(projectImg1);
@@ -69,24 +70,30 @@ export default function Home() {
               )}
             />
             <div className="flex justify-between">
-              <p className="text-orange-500 text-xs sm:text-sm font-thin w-24">
+              <p className="text-orange-500 text-xs sm:text-sm font-semibold w-24">
                 Have Some Questions?
               </p>
-              <svg
-                className="rotate-arrow transition-transform duration-300 transform hover:translate-x-2 hover:-translate-y-2"
-                viewBox="0 0 24 24"
-                width={35}
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <NavLink
+                to="contact"
+
               >
-                <path
-                  d="M6 18L18 6M18 6H9M18 6V15"
-                  stroke="#FF7700"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
+                <svg
+                  className="rotate-arrow transition-transform duration-300 transform hover:translate-x-2 hover:-translate-y-2"
+                  viewBox="0 0 24 24"
+                  width={35}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 18L18 6M18 6H9M18 6V15"
+                    stroke="#FF7700"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </NavLink>
+
             </div>
             <h1 className="text-4xl md:text-5xl sm:text-3xl text-orange-500">
               Contact Me
@@ -107,20 +114,26 @@ export default function Home() {
           <div className="project-box col-span-4 p-5 gap-5 flex flex-col row-span-7 col-start-9 row-start-1 bg-black text-orange-500 rounded-lg overflow-hidden">
             <div className="flex justify-between">
               <h5 className="text-lg sm:text-xl font-semibold">Projects</h5>
-              <svg
-                viewBox="0 0 24 24"
-                width={35}
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <NavLink
+                to="casestudy"
+
               >
-                <path
-                  d="M6 18L18 6M18 6H9M18 6V15"
-                  stroke="orange"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
+                <svg
+                  className="rotate-arrow transition-transform duration-300 transform hover:translate-x-2 hover:-translate-y-2"
+                  viewBox="0 0 24 24"
+                  width={35}
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 18L18 6M18 6H9M18 6V15"
+                    stroke="#FF7700"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>
+                </svg>
+              </NavLink>
             </div>
 
             <img
@@ -130,17 +143,18 @@ export default function Home() {
             />
             <div className="overflow-y-auto max-h-96 scrollbar-hide rounded-lg">
               {[
-                { title: "Ecommerce", subtitle: "MOBILE APP", link: "#" },
-                { title: "Modest Hijab Store", subtitle: "MOBILE APP", link: "#" },
+                { title: "Ecommerce", subtitle: "MOBILE APP", },
+                { title: "Modest Hijab Store", subtitle: "MOBILE APP", },
                 { title: "Zonestra", subtitle: "WEBSITE", link: "https://zonestra.com/" },
                 { title: "KBS Worlds", subtitle: "WEBSITE", link: "https://kbsworld.co.in/" },
                 { title: "Sira Consulting", subtitle: "WEBSITE", link: "https://siraconsultinginc.com/" },
-              ].map((project, index) => (
+              ].map((project, index, projects) => (
                 <div
                   key={index}
                   onMouseEnter={() => handleHover(project.title)}
                   onMouseLeave={() => setCurrentProjectImage(projectImg1)}
-                  className="hover:border-orange-500 hover:text-orange-500 transition-all flex justify-between border-b-2 border-gray-300 py-2"
+                  className={`hover:border-orange-500 hover:text-orange-500 transition-all flex justify-between py-2 ${index !== projects.length - 1 ? 'border-b border-gray-800' : ''
+                    }`}
                 >
                   <h6 className="text-base sm:text-lg font-normal">
                     {project.title} <br />
@@ -159,7 +173,7 @@ export default function Home() {
                     >
                       <path
                         d="M6 18L18 6M18 6H9M18 6V15"
-                        stroke="orange"
+                        stroke="#FF7700"
                         strokeWidth="1.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"

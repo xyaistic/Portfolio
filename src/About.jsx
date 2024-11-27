@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function About() {
-  const x = 10
   return (
     <section className="mx-auto max-w-screen-xl">
       <div className="grid grid-cols-5 gap-4">
@@ -74,9 +73,6 @@ export default function About() {
             During my 6-month internship, I developed responsive web applications with React.js and mobile apps with React Native, enhancing user engagement and ensuring seamless experiences. I collaborated with the design team to implement intuitive UI/UX designs and integrated RESTful APIs for efficient data communication. Using Context API, Zustand I managed application state effectively and applied performance optimizations like code splitting and lazy loading. Additionally, I handled version control with Git, participated in code reviews, and worked with cross-functional teams to deliver high-quality features on time. I also conducted testing and debugging to ensure reliable software delivery while staying updated with the latest industry trends.
           </p>
         </div>
-
-        {/* Education Section */}
-
 
       </div>
     </section>

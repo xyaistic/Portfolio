@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa";
+import { Client, Databases } from "appwrite";
 
+const client = new Client();
+const databases = new Databases(client);
+
+client
+  .setEndpoint('https://cloud.appwrite.io/v1') // Replace with your Appwrite endpoint
+  .setProject('67471ee600054eaaa809'); // Replace with your Appwrite project ID
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -15,9 +22,28 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    try {
+      const response = await databases.createDocument(
+        '67471f080038d49e5cd8', // Replace with your Appwrite database ID
+        '6747210f0033b9d04e4f', // Replace with your Appwrite collection ID
+        'unique()', // Unique document ID
+        formData
+      );
+      console.log('Form submission successful:', response);
+      alert("Message sent successfully!");
+      setFormData({
+        name: '',
+        email: '',
+        interest: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert("Failed to send the message. Please try again.");
+    }
   };
 
   return (
@@ -42,6 +68,7 @@ const Contact = () => {
             <div>
               <label className="block text-gray-700 mb-2">Your name</label>
               <input
+                required
                 type="text"
                 name="name"
                 value={formData.name}
@@ -54,6 +81,7 @@ const Contact = () => {
             <div>
               <label className="block text-gray-700 mb-2">Your email</label>
               <input
+                required
                 type="email"
                 name="email"
                 value={formData.email}
@@ -67,6 +95,7 @@ const Contact = () => {
           <div>
             <label className="block text-gray-700 mb-2">What you are interested in</label>
             <select
+              required
               name="interest"
               value={formData.interest}
               onChange={handleChange}
@@ -95,9 +124,8 @@ const Contact = () => {
             type="submit"
             className="bg-black flex font-semibold justify-center items-center gap-5 text-white px-10 py-4 rounded-md hover:bg-gray-800 transition-colors w-full"
           >
-            Just Send 
+            Just Send
             <FaLocationArrow />
-
           </button>
         </form>
       </div>

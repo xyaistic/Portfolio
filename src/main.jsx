@@ -13,13 +13,15 @@ import Contact from './Contact.jsx';
 import './index.css';
 import Layout from './Layout.jsx';
 import Home from './Home.jsx';
+import CaseStudy from './CaseStudy.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path='' element={<Home />} /> 
+      <Route path='' element={<Home />} />
       <Route path="profile" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="casestudy" element={<CaseStudy />} />
     </Route>
   )
 );
