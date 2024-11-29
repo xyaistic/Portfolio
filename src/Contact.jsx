@@ -50,12 +50,12 @@ const Contact = () => {
     <div className="min-h-[85vh] flex  justify-center flex-col md:flex-row  items-center p-6 md:p-8">
       <div className="max-w-screen-xl  w-full flex flex-col md:flex-row items-center md:items-start">
         {/* Text Section */}
-        <div className="w-full md:w-3/4  text-center md:text-left mb-6 md:mb-0 md:pr-8 flex flex-col md:gap-10">
+        <div className="w-full md:w-3/4  text-left md:text-left mb-6 md:mb-0 md:pr-8 flex flex-col md:gap-3">
           <h5 className="text-xl sm:text-2xl mb-3 font-semibold">
             <span className="text-orange-500">👋 Let’s Connect,</span>
           </h5>
           <h2 className="text-5xl lg:text-8xl xl:text-9xl font-semibold leading-tight">
-            Build Something <span className="text-orange-500">Together.</span>
+            Build Something <span className="text-orange-500 font-bold">Together.</span>
           </h2>
         </div>
 
@@ -122,7 +122,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-black flex font-semibold justify-center items-center gap-5 text-white px-10 py-4 rounded-md hover:bg-gray-800 transition-colors w-full"
+            className="bg-black hover:bg-orange-500 flex font-semibold justify-center items-center gap-5 text-white px-10 py-4 rounded-md transition-colors w-full"
           >
             Just Send
             <FaLocationArrow />
