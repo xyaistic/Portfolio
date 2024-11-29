@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <section className="">
-      <div className="mx-auto max-w-screen-xl md:px-5 px-2">
+      <div className="mx-auto max-w-screen-xl px-5 py-10">
         <div className="flex flex-col gap-4 sm:grid sm:grid-cols-12 sm:grid-rows-7 sm:gap-4">
 
           {/* Hero Section */}
