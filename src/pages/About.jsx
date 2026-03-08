@@ -73,7 +73,7 @@ export default function About() {
               <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">Present</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {['React Native', 'React.js', 'Next.js', 'JavaScript (ES6+)', 'Zustand', 'Context API', 'Redux', 'Offline-First', 'REST APIs', 'Axios', 'Figma', 'Git', 'ClickUp', 'Jira'].map(skill => (
+              {['React Native', 'React Native CLI', 'Expo', 'React.js', 'Next.js', 'TypeScript', 'JavaScript', 'RxDB', 'SQLite', 'WebSockets', 'Firebase Auth', 'OAuth', 'Chat Systems', 'Zustand', 'Context API', 'Redux', 'Offline-First', 'REST APIs', 'Axios', 'Git'].map(skill => (
                 <span key={skill} className="text-xs font-semibold md:text-sm bg-white dark:bg-[#181818] border border-gray-200 dark:border-[#3a3a3a] px-3 py-1 rounded-full text-gray-700 dark:text-gray-300">
                   {skill}
                 </span>

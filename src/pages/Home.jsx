@@ -293,7 +293,7 @@ export default function Home() {
         >
           <Badge>Skills</Badge>
           <div className="flex flex-wrap gap-2 mt-1">
-            {['React Native', 'React.js', 'Next.js', 'Zustand', 'Context API', 'Offline-First', 'REST APIs', 'Redux', 'Axios'].map((skill, i) => (
+            {['React Native', 'React Native CLI', 'Expo', 'React.js', 'TypeScript', 'JavaScript', 'RxDB', 'SQLite', 'WebSockets', 'Firebase Auth', 'OAuth', 'Chat Systems', 'Next.js', 'Zustand', 'Offline-First'].map((skill, i) => (
               <span
                 key={i}
                 className="text-xs px-3 py-1 rounded-full font-medium"
@@ -413,7 +413,7 @@ export default function Home() {
             <FaLinkedinIn size={56} color="white" />
           </a>
           <a
-            href="https://github.com/ziyaafridi"
+            href="https://github.com/xyaistic"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 rounded-3xl flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
