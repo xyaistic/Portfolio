@@ -10,8 +10,11 @@
 }
 
 body {
-  background-color: white;
   font-family: "Montserrat", system-ui;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 @layer base {

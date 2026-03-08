@@ -26,7 +26,7 @@ export default function WordRotate({
 
     // Clean up interval on unmount
     return () => clearInterval(interval);
-  }, [words, duration]);
+  }, [words, duration]); 
 
   return (
     (<div className="overflow-hidden py-2">

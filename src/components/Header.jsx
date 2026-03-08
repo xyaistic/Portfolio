@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import './index.css';
-import logo from '../src/assets/logo.png';
-import { ProjectList } from './ProjectList'; // Import your ProjectList component
-import { FaGripLines } from "react-icons/fa";
+import '../index.css';
+import logo from '../assets/logo.png';
+import { ProjectList } from './ProjectList';
 import { PiDotsThreeOutlineFill } from "react-icons/pi";
 
 export default function Header() {

@@ -8,12 +8,12 @@ import {
   Route,
   RouterProvider
 } from 'react-router-dom';
-import About from './About.jsx';
-import Contact from './Contact.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
 import './index.css';
-import Layout from './Layout.jsx';
-import Home from './Home.jsx';
-import CaseStudy from './CaseStudy.jsx';
+import Layout from './layouts/Layout.jsx';
+import Home from './pages/Home.jsx';
+import CaseStudy from './pages/CaseStudy.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
