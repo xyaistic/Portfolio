@@ -118,9 +118,7 @@ export default function Home() {
         >
           <Badge>About</Badge>
           <p className="text-base leading-relaxed mt-2" style={{ color: textSecondary }}>
-            A dedicated frontend developer with 2 years of hands-on experience in HTML, CSS, JavaScript,
-            React.js, and React Native. Skilled in UI/UX design, enabling the creation of intuitive and
-            visually appealing interfaces. Also proficient in WordPress development.
+            Performance-driven React Native and Frontend Engineer with 2.6+ years of experience specializing in cross-platform mobile development and scalable web architectures.
           </p>
           <NavLink
             to="profile"
@@ -161,8 +159,9 @@ export default function Home() {
           <Badge>Experience</Badge>
           <div className="flex flex-col gap-3 mt-1">
             {[
-              { role: 'React Native Developer', company: 'Internship', period: '2024 – Current' },
-              { role: 'WordPress Developer', company: 'Freelance / Agency', period: '2022 – 2023' },
+              { role: 'React Native Developer', company: 'Wakanda Book', period: 'Jul 2025 – Present' },
+              { role: 'React & RN Developer', company: 'BPD Studio', period: 'Feb 2024 – Jun 2025' },
+              { role: 'React & RN Developer', company: 'Neural Bridge AI', period: 'Nov 2022 – Dec 2023' },
             ].map((exp, i, arr) => (
               <div key={i}>
                 <div className="flex justify-between items-start">
@@ -294,7 +293,7 @@ export default function Home() {
         >
           <Badge>Skills</Badge>
           <div className="flex flex-wrap gap-2 mt-1">
-            {['React.js', 'React Native', 'JavaScript', 'HTML/CSS', 'WordPress', 'UI/UX', 'Git', 'Zustand', 'REST APIs'].map((skill, i) => (
+            {['React Native', 'React.js', 'Next.js', 'Zustand', 'Context API', 'Offline-First', 'REST APIs', 'Redux', 'Axios'].map((skill, i) => (
               <span
                 key={i}
                 className="text-xs px-3 py-1 rounded-full font-medium"
@@ -317,10 +316,10 @@ export default function Home() {
           <Badge>Services</Badge>
           <ul className="flex flex-col gap-2 mt-1">
             {[
-              'Web Development',
-              'Mobile App (React Native)',
-              'UI / UX Design',
-              'WordPress Development',
+              'Mobile App Development (React Native)',
+              'Web Architecture (React.js, Next.js)',
+              'Performance Optimization',
+              'UI/UX implementation',
             ].map((s, i) => (
               <li key={i} className="flex items-center gap-2 text-sm" style={{ color: textSecondary }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#b5f23d] flex-shrink-0" />

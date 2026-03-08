@@ -24,7 +24,7 @@ export default function About() {
               </span>
             </div>
             <p className="text-base md:text-lg font-normal text-gray-600 dark:text-gray-300 leading-relaxed">
-              A dedicated frontend developer with 2 years of hands-on experience in HTML, CSS, JavaScript, React.js, and React Native. Skilled in UI/UX design, enabling the creation of intuitive and visually appealing interfaces. Proficient in WordPress development, successfully completing multiple live projects focused on functionality and user experience. Also has basic knowledge of Java, with an interest in further developing backend skills.
+              Performance-driven React Native Developer and Frontend Engineer with 2.6 years of experience specializing in cross-platform mobile development and scalable web architectures. Proven track record of optimizing app performance, managing complex states with Zustand/Context API, and delivering seamless UI/UX using Figma translations. Expert in Agile workflows and REST API orchestration to drive user engagement.
             </p>
           </div>
         </div>
@@ -39,13 +39,25 @@ export default function About() {
               <h5 className="font-bold text-xl md:text-xl text-gray-900 dark:text-white tracking-tight">
                 BCA
               </h5>
-              <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">2021 - 2024</span>
+              <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">2024</span>
             </div>
             <p className="font-medium text-gray-800 dark:text-gray-200 mb-2">
-              Bachelor's of Computer Applications
+              Bachelor of Computer Application
+            </p>
+            <p className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-6">
+              Makhanlal Chaturvedi National University
+            </p>
+
+            <div className="flex justify-between items-end mb-2 pt-2 border-t border-gray-200 dark:border-[#3a3a3a]">
+              <h5 className="font-bold text-lg md:text-xl text-gray-900 dark:text-white tracking-tight">
+                Specialization
+              </h5>
+            </div>
+            <p className="font-medium text-gray-800 dark:text-gray-200 mb-2">
+              Meta Frontend Development
             </p>
             <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
-              Makhanlal Chaturvedi National University of Journalism and Communication, Bhopal, Madhya Pradesh, India
+              Coursera
             </p>
           </div>
         </div>
@@ -61,7 +73,7 @@ export default function About() {
               <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">Present</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {['HTML', 'CSS', 'JavaScript', 'React.js', 'React Native', 'UI/UX Design', 'WordPress', 'JAVA', 'Git', 'RESTful APIs', 'Zustand', 'Context API', 'SEO'].map(skill => (
+              {['React Native', 'React.js', 'Next.js', 'JavaScript (ES6+)', 'Zustand', 'Context API', 'Redux', 'Offline-First', 'REST APIs', 'Axios', 'Figma', 'Git', 'ClickUp', 'Jira'].map(skill => (
                 <span key={skill} className="text-xs font-semibold md:text-sm bg-white dark:bg-[#181818] border border-gray-200 dark:border-[#3a3a3a] px-3 py-1 rounded-full text-gray-700 dark:text-gray-300">
                   {skill}
                 </span>
@@ -80,32 +92,55 @@ export default function About() {
             {/* Timeline line */}
             <div className="hidden md:block absolute left-[11px] top-2 bottom-2 w-0.5 bg-gray-200 dark:bg-[#3a3a3a]"></div>
 
+            {/* Job 1 */}
             <div className="relative md:pl-10">
               <div className="hidden md:flex absolute left-0 top-1.5 w-6 h-6 rounded-full bg-[#b5f23d]/20 border-4 border-[#f9fafb] dark:border-[#242424] items-center justify-center">
                 <div className="w-2 h-2 rounded-full bg-[#b5f23d]"></div>
               </div>
               <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
                 <h5 className="font-bold text-lg md:text-xl text-gray-900 dark:text-white tracking-tight">
-                  Internship
+                  React Native Developer <span className="text-[#b5f23d] text-base">— Wakanda Book</span>
                 </h5>
-                <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">2024 - Current</span>
+                <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">July 2025 - Present</span>
               </div>
-              <p className="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 leading-relaxed">
-                During my 6-month internship, I worked on building responsive web applications using React.js and mobile apps with React Native. I focused on creating intuitive and user-friendly interfaces that improved user engagement. I also integrated RESTful APIs to ensure smooth and efficient data flow. I managed application state using tools like Context API and Zustand, making the apps more organized and scalable. To improve performance, I implemented features like code splitting and lazy loading.
-              </p>
+              <ul className="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-4 space-y-1">
+                <li>Architected high-performance mobile features, ensuring 99% crash-free sessions across iOS and Android.</li>
+                <li>Engineered robust Offline-First architecture using local storage and data sync patterns.</li>
+                <li>Streamlined UI components from Figma, reducing development time for new features by 20%.</li>
+                <li>Integrated seamless REST API data flows with Axios for real-time interactions.</li>
+              </ul>
             </div>
 
+            {/* Job 2 */}
             <div className="relative md:pl-10">
               <div className="hidden md:block absolute left-0 top-1.5 w-6 h-6 rounded-full bg-gray-300 dark:bg-[#3a3a3a] border-4 border-[#f9fafb] dark:border-[#242424]"></div>
               <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
                 <h5 className="font-bold text-lg md:text-xl text-gray-900 dark:text-white tracking-tight">
-                  WordPress Developer
+                  React & RN Developer <span className="text-gray-500 text-base">— BPD Studio</span>
                 </h5>
-                <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">2022 - 2023</span>
+                <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">Feb 2024 - June 2025</span>
               </div>
-              <p className="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 leading-relaxed">
-                During this job, I developed and maintained responsive WordPress websites using theme builders, enhancing user engagement and ensuring seamless user experiences. I managed the Content Management System (CMS) to control and organize website content effectively and created dynamic websites that catered to diverse client needs. Collaborating with the design team, I implemented intuitive UI/UX designs to produce visually appealing and user-friendly interfaces.
-              </p>
+              <ul className="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-4 space-y-1">
+                <li>Optimized mobile app load times by 30% through asset management and memoization.</li>
+                <li>Developed responsive web interfaces using React.js, maintaining 100% UI consistency.</li>
+                <li>Managed complex asynchronous data flow and states using Context API and Zustand.</li>
+              </ul>
+            </div>
+
+            {/* Job 3 */}
+            <div className="relative md:pl-10">
+              <div className="hidden md:block absolute left-0 top-1.5 w-6 h-6 rounded-full bg-gray-300 dark:bg-[#3a3a3a] border-4 border-[#f9fafb] dark:border-[#242424]"></div>
+              <div className="flex flex-wrap justify-between items-center gap-2 mb-2">
+                <h5 className="font-bold text-lg md:text-xl text-gray-900 dark:text-white tracking-tight">
+                  React & RN Developer <span className="text-gray-500 text-base">— Neural Bridge AI</span>
+                </h5>
+                <span className="text-xs font-semibold text-[#688f1d] dark:text-black bg-[#b5f23d]/20 dark:bg-[#b5f23d] px-2 py-1 rounded">Nov 2022 - Dec 2023</span>
+              </div>
+              <ul className="text-sm md:text-base font-normal text-gray-600 dark:text-gray-300 leading-relaxed list-disc ml-4 space-y-1">
+                <li>Built core modules for HR and delivery platforms, supporting real-time status updates.</li>
+                <li>Implemented secure backend API integrations using Axios across mobile and web.</li>
+                <li>Collaborated within Agile teams to translate business requirements into high-integrity code.</li>
+              </ul>
             </div>
           </div>
         </div>
