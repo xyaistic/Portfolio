@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import pro1 from '../assets/project1.jpg'
 import pro2 from '../assets/pro2.jpg'
 import pro3 from '../assets/pro3.png'
@@ -6,9 +8,19 @@ import Badge from '@/components/ui/Badge';
 
 export default function CaseStudy() {
     return (
-        <section className="mx-auto max-w-screen-xl py-10 flex flex-col gap-5 px-4 sm:px-6 lg:px-8">
+        <section className="mx-auto max-w-screen-xl py-8 flex flex-col gap-5 px-4 sm:px-6 lg:px-8">
+            {/* Back navigation */}
+            <div className="flex items-center justify-between">
+                <NavLink
+                    to="/"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-gray-700 dark:text-gray-300 hover:text-[#7aa71c] dark:hover:text-[#b5f23d] transition-colors py-1 px-3 rounded-full bg-gray-100 dark:bg-[#242424] border border-gray-200 dark:border-[#3a3a3a]"
+                >
+                    <FaArrowLeft size={12} /> Back to Overview
+                </NavLink>
+            </div>
+
             {/* Header Section */}
-            <div className="flex flex-wrap md:flex-nowrap justify-between items-start border-b border-gray-200 py-5 gap-5">
+            <div className="flex flex-wrap md:flex-nowrap justify-between items-start border-b border-gray-200 dark:border-[#3a3a3a] py-5 gap-5">
                 <h1 className="text-3xl font-semibold w-full md:w-1/2">Case Study</h1>
                 <p className="w-full md:w-1/2">Initially, it was decided between us and the client that the project would be built using React.js. However, since the client needed the website urgently, we mutually decided to design it using a CMS with WordPress to ensure faster delivery.</p>
             </div>

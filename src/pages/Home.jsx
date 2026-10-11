@@ -118,7 +118,7 @@ export default function Home() {
         >
           <Badge>About</Badge>
           <p className="text-base leading-relaxed mt-2" style={{ color: textSecondary }}>
-            Performance-driven React Native and Frontend Engineer with 2.6+ years of experience specializing in cross-platform mobile development and scalable web architectures.
+            React Native and React.js Developer with 3+ years of experience building cross-platform mobile and web applications. Specialized in offline-first ERP systems, local database architecture, bidirectional data synchronization, and reliable online & offline workflows.
           </p>
           <NavLink
             to="profile"
@@ -159,9 +159,9 @@ export default function Home() {
           <Badge>Experience</Badge>
           <div className="flex flex-col gap-3 mt-1">
             {[
-              { role: 'React Native Developer', company: 'Wakanda Book', period: 'Jul 2025 – Present' },
-              { role: 'React & RN Developer', company: 'BPD Studio', period: 'Feb 2024 – Jun 2025' },
-              { role: 'React & RN Developer', company: 'Neural Bridge AI', period: 'Nov 2022 – Dec 2023' },
+              { role: 'React Native Developer', company: 'Wakanda Book - ERP System', period: 'Jul 2025 – Present' },
+              { role: 'React & React Native Developer', company: 'BPD Studio, Bhopal', period: 'Feb 2024 – Jun 2025' },
+              { role: 'React & React Native Developer', company: 'Neural Bridge AI, Bhopal', period: 'Nov 2022 – Dec 2023' },
             ].map((exp, i, arr) => (
               <div key={i}>
                 <div className="flex justify-between items-start">
@@ -293,7 +293,7 @@ export default function Home() {
         >
           <Badge>Skills</Badge>
           <div className="flex flex-wrap gap-2 mt-1">
-            {['React Native', 'React Native CLI', 'Expo', 'React.js', 'TypeScript', 'JavaScript', 'RxDB', 'SQLite', 'WebSockets', 'Firebase Auth', 'OAuth', 'Chat Systems', 'Next.js', 'Zustand', 'Offline-First'].map((skill, i) => (
+            {['React Native', 'Offline-First', 'RxDB', 'SQLite', 'Bidirectional Sync', 'React.js', 'Next.js', 'JavaScript (ES6+)', 'Zustand', 'Context API', 'RESTful APIs', 'Axios', 'iOS & Android', 'Git', 'Figma'].map((skill, i) => (
               <span
                 key={i}
                 className="text-xs px-3 py-1 rounded-full font-medium"
@@ -316,10 +316,10 @@ export default function Home() {
           <Badge>Services</Badge>
           <ul className="flex flex-col gap-2 mt-1">
             {[
-              'Mobile App Development (React Native)',
-              'Web Architecture (React.js, Next.js)',
-              'Performance Optimization',
-              'UI/UX implementation',
+              'Mobile App Development (React Native, iOS & Android)',
+              'Offline-First Data Architecture (RxDB, SQLite & Sync)',
+              'Web Application Engineering (React.js, Next.js)',
+              'State Management & REST API Orchestration',
             ].map((s, i) => (
               <li key={i} className="flex items-center gap-2 text-sm" style={{ color: textSecondary }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#b5f23d] flex-shrink-0" />
@@ -370,9 +370,9 @@ export default function Home() {
           </div>
           <div className="flex flex-col flex-1 items-start  mt-2 relative z-10">
 
-            <p className="font-semibold text-lg" style={{ color: textPrimary }}>Mobile App & AI Integrations</p>
+            <p className="font-semibold text-lg" style={{ color: textPrimary }}>Offline-First Mobile & Scalable Web</p>
             <p className="text-sm mt-2 leading-relaxed" style={{ color: textSecondary }}>
-              Building high-performance, cross-platform mobile applications primarily using React Native. Concurrently diving deep into Artificial Intelligence, exploring ways to integrate smart LLMs, AI agents, and automated workflows into modern mobile and web products.
+              Engineering robust, offline-first mobile applications with React Native, RxDB, and SQLite featuring seamless bidirectional synchronization. Building high-performance web applications with React.js and Next.js, and integrating reliable asynchronous data pipelines.
             </p>
           </div>
 
@@ -404,7 +404,7 @@ export default function Home() {
         {/* ── 10. Social Links ── col2 row4 */}
         <div className="flex gap-4 min-h-[140px] sm:min-h-[180px]">
           <a
-            href="https://linkedin.com/in/ziya-afridi"
+            href="https://www.linkedin.com/in/ziya-afridi/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 rounded-3xl flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
