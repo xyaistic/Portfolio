@@ -8,6 +8,7 @@ import {
   Route,
   RouterProvider
 } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import About from './pages/About.jsx';
 import Contact from './pages/Contact.jsx';
 import './index.css';
@@ -30,5 +31,6 @@ const router = createBrowserRouter(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <SpeedInsights />
   </StrictMode>
 );
